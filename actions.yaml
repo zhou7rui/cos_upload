@@ -1,0 +1,27 @@
+name: 'COS upload'
+description: 'tencent cloud cos upload'
+inputs:
+  secretId:  # id of input
+    description: 'secret id'
+    required: true
+  secretKey:  # id of input
+    description: 'Secret key'
+    required: true
+  source_dir:  # id of input
+    description: 'Source dir'
+    required: true
+    default: './dist'
+  bucket:  # id of input
+    description: 'bucket'
+    required: true
+    default: ''
+  region:  # id of input
+    description: 'region'
+    required: true
+    default: ''
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: zhou7rui/cos_upload@main
+        with:
+          secretId: ${{ secrets.COS_SECRET_ID }}
+          secretkey: ${{ secrets.COS_SECRET_KEY }}
+          source_dir: './package.json'
+          bucket: "test"
+          region: 'cn-chengdu'

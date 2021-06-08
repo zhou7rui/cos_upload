@@ -1,0 +1,18 @@
+{
+  "name": "cos_upload",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "cos-nodejs-sdk-v5": "^2.9.18"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
+    "typescript": "^4.3.2"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
