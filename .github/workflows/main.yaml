@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: zhou7rui/cos_upload@main
+        uses: ./
         with:
           secretId: ${{ secrets.COS_SECRET_ID }}
           secretkey: ${{ secrets.COS_SECRET_KEY }}
